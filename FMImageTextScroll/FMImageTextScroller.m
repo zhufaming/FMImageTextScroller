@@ -114,7 +114,14 @@
         SourceModel *model2=sourceArr[0];
         //text
         
-        SourceModel *model3=sourceArr[1];
+        
+        SourceModel *model3=nil;
+        
+        if (sourceArr.count>1) {
+            model3=sourceArr[1];
+        }
+        
+
         if (flag) {
             
             [_imageView1 sd_setImageWithURL:[NSURL URLWithString:model1.imgUrl] placeholderImage:nil];
